@@ -39,7 +39,7 @@ subprojects {
     cloudstream {
         // When running through the GitHub workflow, GITHUB_REPOSITORY holds the current repo name.
         // Change the fallback below to YOUR GitHub repo (user/repo) once you fork/create it.
-        setRepo(System.getenv("GITHUB_REPOSITORY") ?: "https://github.com/YOUR_USERNAME/fztwins-cloudstream")
+        setRepo(System.getenv("GITHUB_REPOSITORY") ?: "https://github.com/Abhishekud/fztwins-cloudstream")
 
         authors = listOf("FzTwins")
     }

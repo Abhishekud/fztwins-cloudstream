@@ -26,7 +26,7 @@ branch of compiled `.cs3` files). Two ways to use this:
 ### Option A — build it yourself with GitHub Actions (recommended)
 
 1. Create a new GitHub repo (e.g. `fztwins-cloudstream`) and push this project to it.
-2. In `build.gradle.kts`, change the `setRepo(... ?: "https://github.com/YOUR_USERNAME/fztwins-cloudstream")`
+2. In `build.gradle.kts`, change the `setRepo(... ?: "https://github.com/Abhishekud/fztwins-cloudstream")`
    fallback to your repo.
 3. Push to `main`. The workflow in `.github/workflows/build.yml` compiles the
    plugins and force-pushes `FzMovies.cs3`, `FzTvseries.cs3` and `plugins.json`
