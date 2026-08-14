@@ -5,13 +5,11 @@ buildscript {
     repositories {
         google()
         mavenCentral()
-        // Shitpack repo which contains the CloudStream tools and dependencies
         maven("https://jitpack.io")
     }
 
     dependencies {
-        classpath("com.android.tools.build:gradle:7.0.4")
-        // CloudStream gradle plugin which makes everything work and builds the .cs3 plugins
+        classpath("com.android.tools.build:gradle:8.2.2")
         classpath("com.github.recloudstream:gradle:-SNAPSHOT")
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.22")
     }
@@ -37,18 +35,19 @@ subprojects {
     apply(plugin = "com.lagradost.cloudstream3.gradle")
 
     cloudstream {
-        // When running through the GitHub workflow, GITHUB_REPOSITORY holds the current repo name.
-        // Change the fallback below to YOUR GitHub repo (user/repo) once you fork/create it.
         setRepo(System.getenv("GITHUB_REPOSITORY") ?: "https://github.com/Abhishekud/fztwins-cloudstream")
-
         authors = listOf("FzTwins")
     }
 
+    val nsSuffix = project.name.lowercase()
+
     android {
+        namespace = "com.fztwins.$nsSuffix"
+
         defaultConfig {
             minSdk = 21
-            compileSdkVersion(33)
-            targetSdk = 33
+            compileSdkVersion(34)
+            targetSdk = 34
         }
 
         compileOptions {
@@ -58,7 +57,7 @@ subprojects {
 
         tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
             kotlinOptions {
-                jvmTarget = "1.8" // Required
+                jvmTarget = "1.8"
                 freeCompilerArgs = freeCompilerArgs +
                     "-Xno-call-assertions" +
                     "-Xno-param-assertions" +
@@ -71,12 +70,11 @@ subprojects {
         val apk by configurations
         val implementation by configurations
 
-        // Stubs for all CloudStream classes
         apk("com.lagradost:cloudstream3:pre-release")
 
-        implementation(kotlin("stdlib")) // standard kotlin features
-        implementation("com.github.Blatzar:NiceHttp:0.4.11") // http library
-        implementation("org.jsoup:jsoup:1.17.2") // html parser
+        implementation(kotlin("stdlib"))
+        implementation("com.github.Blatzar:NiceHttp:0.4.11")
+        implementation("org.jsoup:jsoup:1.17.2")
         implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.16.1")
         implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.0")
     }
