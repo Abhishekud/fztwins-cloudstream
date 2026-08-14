@@ -1,0 +1,9 @@
+{
+  "name": "FzTwins",
+  "description": "FzMovies & FzTvseries — data-friendly direct MP4 downloads for movies and TV series.",
+  "manifestVersion": 1,
+  "iconUrl": "https://www.google.com/s2/favicons?domain=fzmovies.net&sz=64",
+  "pluginLists": [
+    "https://raw.githubusercontent.com/YOUR_USERNAME/fztwins-cloudstream/builds/plugins.json"
+  ]
+}
