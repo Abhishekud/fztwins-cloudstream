@@ -49,6 +49,12 @@ class FzMovies : MainAPI() {
     override var lang = "en"
     override val supportedTypes = setOf(TvType.Movie)
 
+    private fun fixUrl(url: String): String {
+        if (url.startsWith("http")) return url
+        if (url.startsWith("//")) return "https:" + url
+        return mainUrl.trimEnd('/') + "/" + url.trimStart('/')
+    }
+
     // request.data holds a browse URL ending in the page-id query so we can append the page number.
     override val mainPage = mainPageOf(
         "$MAIN_URL/browse.php?g=Hollywood&pageID=" to "Hollywood",

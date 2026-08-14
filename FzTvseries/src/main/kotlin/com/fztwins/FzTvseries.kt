@@ -51,6 +51,12 @@ class FzTvseries : MainAPI() {
     override var lang = "en"
     override val supportedTypes = setOf(TvType.TvSeries)
 
+    private fun fixUrl(url: String): String {
+        if (url.startsWith("http")) return url
+        if (url.startsWith("//")) return "https:" + url
+        return mainUrl.trimEnd('/') + "/" + url.trimStart('/')
+    }
+
     override val mainPage = mainPageOf(
         "$MAIN_URL/browse.php?g=TVShows&pageID=" to "TV Shows",
         "$MAIN_URL/browse.php?g=Anime&pageID=" to "Anime",
