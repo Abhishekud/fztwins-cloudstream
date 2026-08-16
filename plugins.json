@@ -1,11 +1,11 @@
 [
     {
-        "iconUrl": "https://www.google.com/s2/favicons?domain=fzmovies.net&sz=%size%",
-        "fileHash": "sha256-fe41619ed0bf724bda763f04b918c1b6332672e106b826d6a1fa4e19cff15baa",
+        "iconUrl": "https://www.google.com/s2/favicons?domain=fzmovies.live&sz=%size%",
+        "fileHash": "sha256-3a5dc989d71c7380d4f18906724ba604443016bf176742c319a5df438191e7d7",
         "apiVersion": 1,
         "repositoryUrl": "https://github.com/Abhishekud/fztwins-cloudstream",
-        "fileSize": 12733,
-        "status": 3,
+        "fileSize": 12740,
+        "status": 1,
         "language": "en",
         "authors": [
             "FzTwins"
@@ -13,19 +13,19 @@
         "tvTypes": [
             "Movie"
         ],
-        "version": 1,
+        "version": 2,
         "internalName": "FzMovies",
-        "description": "FzMovies \u2014 Bollywood & Hollywood movies as direct, data-friendly MP4 downloads (multiple quality tiers). Twin site of FzTvseries.",
+        "description": "FzMovies \u2014 Bollywood & Hollywood movies as direct, data-friendly MP4 downloads (multiple quality tiers). Twin site of FzTvseries. Working with fzmovies.live",
         "url": "https://raw.githubusercontent.com/Abhishekud/fztwins-cloudstream/builds/FzMovies.cs3",
         "name": "FzMovies"
     },
     {
-        "iconUrl": "https://www.google.com/s2/favicons?domain=mobiletvshows.site&sz=%size%",
-        "fileHash": "sha256-79bc48b1426ca903a65fe63c3a887594bc77909a71edd39dd85290690183020c",
+        "iconUrl": "https://www.google.com/s2/favicons?domain=fztvseries.live&sz=%size%",
+        "fileHash": "sha256-750800b68027fbb90a6b96c8650ac7489622d213c138c80a3dd4c718ff4584d6",
         "apiVersion": 1,
         "repositoryUrl": "https://github.com/Abhishekud/fztwins-cloudstream",
-        "fileSize": 13971,
-        "status": 3,
+        "fileSize": 13961,
+        "status": 1,
         "language": "en",
         "authors": [
             "FzTwins"
@@ -33,9 +33,9 @@
         "tvTypes": [
             "TvSeries"
         ],
-        "version": 1,
+        "version": 2,
         "internalName": "FzTvseries",
-        "description": "FzTvseries \u2014 TV series & shows as direct, data-friendly MP4 downloads (per-episode, multiple quality tiers). Serves mobiletvshows.site / tvseries.in. Twin site of FzMovies.",
+        "description": "FzTvseries \u2014 TV series & shows as direct, data-friendly MP4 downloads (per-episode, multiple quality tiers). Working with fztvseries.live. Twin site of FzMovies.",
         "url": "https://raw.githubusercontent.com/Abhishekud/fztwins-cloudstream/builds/FzTvseries.cs3",
         "name": "FzTvseries"
     }
