@@ -27,7 +27,7 @@ class FzMovies : MainAPI() {
     // fzmovies.host) and bump `version` in build.gradle.kts.
     // ---------------------------------------------------------------------
     companion object {
-        private const val MAIN_URL = "https://fzmovies.net"
+        private const val MAIN_URL = "https://fzmovies.live"
 
         // Endpoints
         private const val SEARCH_PATH = "/csearch.php"

@@ -28,7 +28,7 @@ class FzTvseries : MainAPI() {
     // `version` in build.gradle.kts.
     // ---------------------------------------------------------------------
     companion object {
-        private const val MAIN_URL = "https://www.mobiletvshows.site"
+        private const val MAIN_URL = "https://fztvseries.live"
 
         private const val SEARCH_PATH = "/csearch.php"
         private const val SEARCH_FIELD = "searchname"

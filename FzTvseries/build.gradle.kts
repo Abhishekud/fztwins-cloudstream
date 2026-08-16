@@ -1,10 +1,10 @@
 // Bump this by 1 every time you change the provider so users get the update.
-version = 1
+version = 2
 
 cloudstream {
     language = "en"
 
-    description = "FzTvseries — TV series & shows as direct, data-friendly MP4 downloads (per-episode, multiple quality tiers). Serves mobiletvshows.site / tvseries.in. Twin site of FzMovies."
+    description = "FzTvseries — TV series & shows as direct, data-friendly MP4 downloads (per-episode, multiple quality tiers). Working with fztvseries.live. Twin site of FzMovies."
     authors = listOf("FzTwins")
 
     /**
@@ -14,9 +14,9 @@ cloudstream {
      * 2: Slow
      * 3: Beta only
      */
-    status = 3 // Beta — selectors need verification against the live site (see README).
+    status = 1 // Ok — verified working on fztvseries.live
 
     tvTypes = listOf("TvSeries")
 
-    iconUrl = "https://www.google.com/s2/favicons?domain=mobiletvshows.site&sz=%size%"
+    iconUrl = "https://www.google.com/s2/favicons?domain=fztvseries.live&sz=%size%"
 }
